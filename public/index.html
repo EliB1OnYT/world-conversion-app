@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Universal Converter</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <img src="assets/logos/logo-72.png" alt="logo" class="logo">
+      <h1>Universal Converter</h1>
+    </div>
+    <div class="controls">
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="sidebar">
+      <nav>
+        <button class="nav-btn active" data-module="length">Length</button>
+        <button class="nav-btn" data-module="weight">Weight</button>
+        <button class="nav-btn" data-module="area">Area</button>
+        <button class="nav-btn" data-module="time">Time</button>
+        <button class="nav-btn" data-module="currency">Currency</button>
+      </nav>
+    </section>
+
+    <section class="main-area" id="mainArea">
+      <!-- Module content injected here -->
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>Built with ❤️ using Node.js + Express</small>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
